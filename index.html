@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- config js -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "rinterio-primary": "#ABEF5F",
+              "rinterio-secondary": "#494949",
+              "item-primary": "#737373",
+            },
+          },
+        },
+      };
+    </script>
+    <title></title>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <header class="bg-gradient-to-t from-white to-gray-100">
+      <div class="w-[90%] lg:w-4/5 mx-auto pt-8 lg:pt-12">
+        <!-- navbar start  -->
+        <nav class="flex justify-between items-center">
+          <div class="flex items-center space-x-1">
+            <div
+              class="w-8 h-8 mr-1 bg-rinterio-primary rounded-full flex justify-center items-center -rotate-45"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <a class="border-red-600 font-extrabold text-3xl">Rinterio</a>
+          </div>
+          <div class="hidden lg:block">
+            <ul class="flex space-x-9 text-item-primary">
+              <li class="font-extrabold text-rinterio-secondary">
+                <a>Home</a>
+              </li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:block">
+            <div class="flex gap-1">
+              <div
+                class="w-12 h-12 rounded-full bg-white flex justify-center items-center"
+              >
+                <i class="fa-solid fa-magnifying-glass rounded-full"></i>
+              </div>
+              <div
+                class="w-12 h-12 rounded-full bg-white flex justify-center items-center"
+              >
+                <i class="fa-solid fa-cart-shopping rounded-full"></i>
+              </div>
+              <a
+                class="btn bg-rinterio-primary font-extrabold text-lg rounded-3xl"
+                >Book Consult
+                <div
+                  class="w-8 h-8 bg-rinterio-primary rounded-full flex justify-center items-center -rotate-45"
+                >
+                  <i
+                    class="fa-solid fa-arrow-right w-8 h-8 flex justify-center items-center bg-black rounded-full text-white"
+                  ></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="lg:hidden flex justify-center items-center mr-0 w-12 h-12 bg-white rounded-full"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <!-- navbar end  -->
+        <!-- banner star  -->
+        <div class="mt-8 lg:mt-14 space-y-4 lg:space-y-6 text-center">
+          <img class="mx-auto" src="assets/banner.png" alt="banner-image" />
+          <h1 class="font-extrabold text-3xl lg:text-6xl">
+            Rinterio crafts spaces that blend modern elegance .
+          </h1>
+          <p class="font-medium text-rinterio-secondary">
+            Rinterio transforms ordinary spaces into extraordinary environments
+            by seamlessly blending modern design with timeless elegance. Our
+            commitment to quality .
+          </p>
+          <a
+            class="btn w-full lg:w-52 bg-[#ABEF5F80] font-extrabold text-lg rounded-3xl"
+            >View Details
+            <div
+              class="w-8 h-8 bg-rinterio-primary rounded-full flex justify-center items-center -rotate-45"
+            >
+              <i
+                class="fa-solid fa-arrow-right w-8 h-8 flex justify-center items-center rounded-full text-black"
+              ></i>
+            </div>
+          </a>
+        </div>
+        <!-- banner end  -->
+      </div>
+    </header>
+  </body>
+</html>
